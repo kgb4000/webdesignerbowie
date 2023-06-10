@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
 import Button from '@/components/Button'
 
-export default function ContactForm({ h2, p }) {
+export default function ContactForm() {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,

@@ -2,20 +2,20 @@
 
 import Button from '@/components/Button'
 import styled from 'styled-components'
-import PageHeroSection from '@/components/PageHeroSection'
+import HeroSection from '@/components/HeroSection'
 import { Businesses, Business } from '../components/BusinessesWeWorkWith'
 
 export default function Home() {
   return (
     <main>
-      <PageHeroSection
+      <HeroSection
         heroText="Looking for a Web Designer in Bowie?"
-        subText="We Design and Build Fast, Secure and Simple Websites for General Contractors."
+        subText="We Design and Build Website for General Contractors."
         backgroundImage="/images/maryland-seo-company.webp"
-        backgroundHeight="60vh"
+        backgroundHeight="80vh"
         backgroundPosition="center"
-        buttonText="Call us Today!"
-        heroBtnLink="https://google.com"
+        buttonText="Schedule your free consultaion today!"
+        buttonLink="https://google.com"
       />
       <section>
         <div className="medium-container">
@@ -29,8 +29,8 @@ export default function Home() {
               <img
                 src="/images/web-designer-bowie-md.webp"
                 className="page-img"
-                alt="Maryland SEO company"
-                title="Home service businesses we work with."
+                alt="Web designer in Bowie, Maryland."
+                title="Web designer."
                 loading="lazy"
               />
               <div>
@@ -46,8 +46,8 @@ export default function Home() {
               <img
                 src="/images/web-development-bowie.webp"
                 className="page-img"
-                alt="Maryland SEO company"
-                title="Home service businesses we work with."
+                alt="Web development."
+                title="Web development."
                 loading="lazy"
               />
               <div>
@@ -63,8 +63,8 @@ export default function Home() {
               <img
                 src="/images/local-seo.webp"
                 className="page-img"
-                alt="Maryland SEO company"
-                title="Home service businesses we work with."
+                alt="Local SEO"
+                title="Local SEO."
                 loading="lazy"
               />
               <div>

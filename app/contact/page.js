@@ -25,12 +25,3 @@ export default function Contact() {
     </>
   )
 }
-
-const metadata = {
-  title: 'About me | Web Designer',
-  openGraph: {
-    title: 'About me | Web Designer',
-    description:
-      'I am a web designer living in Bowie and I design sites for general Contractors.',
-  },
-}
