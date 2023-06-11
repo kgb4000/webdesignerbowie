@@ -10,18 +10,18 @@ import ContactForm from '@/components/Contact-Form'
 //   canonical: '/about',
 // }
 
-
-
 export default function Contact() {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <meta title="Contact us" />
+      </Head>
       <main>
         <section>
           <div className="medium-container">
             <Content>
-              <h1 className="title">Contact Us</h1>
-              <p className="center">We want to hear from you</p>
+              <h1 className="title">Contact Me</h1>
+              <p className="center">I want to hear from you</p>
               <p>
                 Phone: <a href="tel:1-240-266-0588">(240) 266-0588</a>
               </p>
@@ -29,6 +29,7 @@ export default function Contact() {
                 Email: <a href="mailto:info@bowieseo.com">info@bowieseo.com</a>
               </p>
               <p>Or fill out the form below</p>
+              <h2>Send a Message</h2>
             </Content>
           </div>
         </section>

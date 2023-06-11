@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 import styled from 'styled-components'
 
@@ -179,6 +177,12 @@ const SubmitButton = styled.button`
   margin: 2rem 0;
   outline: none;
   text-transform: uppercase;
+  width: 100%;
+
+  &:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 5px ##27ae61;
+  transform: translateY(4px);
 
   &:active {
   background-color: #3e8e41;

@@ -35,8 +35,8 @@ export default function RootLayout({ children }) {
         <StyledComponentsRegistry>
           <Nav />
           {children}
+          <Footer />
         </StyledComponentsRegistry>
-        <Footer />
       </body>
     </html>
   )

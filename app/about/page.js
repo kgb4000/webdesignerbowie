@@ -16,7 +16,7 @@ export default function About() {
     <>
       <main>
         <section>
-          <div className="container">
+          <div className="small-container">
             <h1>About me</h1>
             <p>
               My name is Kester, and I am a frontend web developer and web
@@ -46,7 +46,7 @@ export default function About() {
               more money.
             </p>
           </div>
-          <div className="container">
+          <div className="small-container">
             <h2>Why Work With Me</h2>
             <p>
               I believe people should use their websites to make more money. A
@@ -73,7 +73,7 @@ export default function About() {
               success for your business.
             </p>
           </div>
-          <div className="container">
+          <div className="small-container">
             <h2>What You Get From Me!</h2>
             <div>
               <h3>No Bull</h3>
