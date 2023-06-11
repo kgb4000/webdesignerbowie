@@ -469,22 +469,26 @@ export default function Home() {
                 have it done in less than 2 weeks.
               </p>
               <h3>2. You'll Get Noticed</h3>
-              <p>We design and build websites that enhance your brand.</p>
+              <p>
+                I design and build contractor websites that enhance your brand
+                and make you look like the professional you are.
+              </p>
               <h3>3. Fair and Affordable Pricing</h3>
               <p>
-                We live here. We want to see businesses in Bowie thrive. We are
-                vested in the success of all Bowie small businesses.
+                My web design prices are made for contractors just starting out.
+                And still want a high performing website that get leads and
+                start ranking in the search engines.
               </p>
               <h3>4. No Long-Term Contracts</h3>
               <p>
-                I design and build your website, and it's yours forever. We even
+                I design and build your website, and it's yours forever. I even
                 give you the code so you own everything.
               </p>
               <h3>5. We are a Local Web Design Company</h3>
               <p>
                 I live here. We want to see businesses in Bowie and Prince
-                George's County thrive. We are vested in the success of any
-                Bowie small businesses we partner with.
+                George's County thrive. I are vested in the success of any Bowie
+                small businesses we partner with.
               </p>
             </div>
           </div>
@@ -494,7 +498,8 @@ export default function Home() {
       <section>
         <div className="container">
           <h2 className="title">
-            Frequently Asked Questions about Our Web Design Services
+            Frequently Asked Questions about Our Web Design Services for General
+            Contractors
           </h2>
           <p className="subtext">
             Here are some FAQs that may help you decide what's the best thing to
@@ -594,38 +599,30 @@ export default function Home() {
               </p>
             </div>
           </FAQs>
-          {/* <div>
-            <h3>Why Do I Need a Website</h3>
-            <h3>How Many Hours Does it Take to Build a Website?</h3>
-            <h3>What is a Fair Price to Build a Website?</h3>
-            <h3>How Much Does a Website Cost for a Small Business?</h3>
-            <h3>Do I Need Local SEO?</h3>
-            <h3>What are the benefits of Local SEO?</h3>
-            <h3>How long does it take for Local SEO to work?</h3>
-            <h3>What is Google My Business?</h3>
-          </div> */}
         </div>
       </section>
-      <div className="container">
-        <div className="grid">
-          <img
-            src="/images/happy-customer-calling-for-web-design-services.jpg"
-            className="call-to-action-grid-img"
-            alt="Man calling our Maryland SEO company."
-            width="1000"
-            height="667"
-            loading="lazy"
-          />
-          <div className="container">
-            <h2>
-              Stop Delaying, You're Missing Out on People Searching on Google
-              for Your Services
-            </h2>
-            <p>Call me and lets start designing your website today.</p>
-            <Button buttonText="Call me and get started now!" />
+      <CallToAction>
+        <div className="container">
+          <div className="grid">
+            <img
+              src="/images/happy-customer-calling-for-web-design-services.jpg"
+              className="call-to-action-grid-img"
+              alt="Man calling our Maryland SEO company."
+              width="1000"
+              height="667"
+              loading="lazy"
+            />
+            <div className="container">
+              <h2>
+                Stop Delaying. You're Missing Out on People Searching on Google
+                for Your Services
+              </h2>
+              <p>Call me and lets start designing your website today.</p>
+              <Button buttonText="Get started now!" />
+            </div>
           </div>
         </div>
-      </div>
+      </CallToAction>
     </main>
   )
 }
@@ -689,11 +686,20 @@ const Deliverable = styled.div`
 
   }
 `
-
 const FAQs = styled.div`
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
+  }
+`
+
+const CallToAction = styled.div`
+  h2 {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 900px) {
+    text-align: left;
   }
 `

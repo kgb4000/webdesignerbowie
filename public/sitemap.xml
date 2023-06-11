@@ -4,5 +4,11 @@
      <url>
        <loc>http://bowiewebmedia.com</loc>
      </url>
+     <url>
+       <loc>http://bowiewebmedia.com/about</loc>
+     </url>
+     <url>
+       <loc>http://bowiewebmedia.com/contact</loc>
+     </url>
    </urlset>
    </xml>
