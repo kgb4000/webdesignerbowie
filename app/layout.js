@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           crossOrigin="true"
         ></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
           rel="stylesheet"
         ></link>
       </Head>

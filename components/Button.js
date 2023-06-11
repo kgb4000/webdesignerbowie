@@ -5,7 +5,9 @@ import styled from 'styled-components'
 export default function ButtonForamt({ buttonText }) {
   return (
     <div className="center-btn container">
-      <ButtonBtn>{buttonText}</ButtonBtn>
+      <a href="tel:240-5415309">
+        <ButtonBtn>{buttonText}</ButtonBtn>
+      </a>
     </div>
   )
 }

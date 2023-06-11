@@ -11,13 +11,16 @@ export default function FooterSection() {
             <div className="footer-section">
               <h3>Bowie Web Media</h3>
               <p>info@bowiewebmedia.com</p>
-              <p>(240) 266-0588</p>
+              <p>
+                <a href="tel:240-541-5309">(240) 541-5309</a>
+              </p>
             </div>
             <div className="footer-section">
               <h3>Services</h3>
               <p>Web Design</p>
               <p>Web Develpoment</p>
               <p>Local SEO</p>
+              <p>Google My Business Management</p>
             </div>
             <div className="footer-section">
               <h3>Hours</h3>

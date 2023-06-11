@@ -21,7 +21,7 @@ const HeroSection = ({
           <h1 className="heroText">{heroText}</h1>
           <p>{subText}</p>
           {buttonText && (
-            <a href={buttonLink}>
+            <a href="tel:240-5415309">
               <WhiteButton>{buttonText}</WhiteButton>
             </a>
           )}
@@ -66,7 +66,7 @@ const Hero = styled('div')`
 
   @media (min-width: 768px) {
     h1 {
-      font-size: 3.8rem;
+      font-size: 4.2rem;
     }
 
     p {

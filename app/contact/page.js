@@ -14,7 +14,11 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <meta title="Contact us" />
+        <title>"Contact us"</title>
+        <meta
+          name="description"
+          content="This is our Contact us page. Please feel free to contact us about your web design needs."
+        />
       </Head>
       <main>
         <section>
@@ -26,7 +30,8 @@ export default function Contact() {
                 Phone: <a href="tel:1-240-266-0588">(240) 266-0588</a>
               </p>
               <p>
-                Email: <a href="mailto:info@bowieseo.com">info@bowieseo.com</a>
+                Email:{' '}
+                <a href="mailto:info@bowiewebmedia.com">info@bowiewebmedia.com</a>
               </p>
               <p>Or fill out the form below</p>
               <h2>Send a Message</h2>

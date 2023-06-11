@@ -314,9 +314,9 @@ export default function Home() {
       <section>
         <div className="container">
           <h2 className="title">
-            What You Get When You Work With Me and Bowie Web Media
+            What You Get When I Create a Simple Website for Your Business
           </h2>
-          <p className="subtext">Here is what you get when you work with us.</p>
+          <p className="subtext">Here is what you get when you work with me.</p>
           <Deliverables>
             <Deliverable>
               <img
@@ -621,7 +621,7 @@ export default function Home() {
               Stop Delaying, You're Missing Out on People Searching on Google
               for Your Services
             </h2>
-            <p>Call me and start building your website today.</p>
+            <p>Call me and lets start designing your website today.</p>
             <Button buttonText="Call me and get started now!" />
           </div>
         </div>
