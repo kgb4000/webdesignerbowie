@@ -57,18 +57,18 @@ export default function FooterSection() {
 
 const Footer = styled.footer`
   margin-top: 4rem;
-  padding: 4rem 0;
+  padding: 8rem 0;
   color: #fff;
-  background-color: #2c3e50;
+  background-color: #1e2c35;
   .footer {
-    @media (min-width: 900px) {
+    @media screen and (min-width: 900px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
       align-content: center;
     }
 
-    @media (min-width: 1140px) {
+    @media screen and (min-width: 1140px) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 60px;
@@ -92,7 +92,7 @@ const LowerFooter = styled.div`
   color: #fff;
   text-align: center;
 
-  @media (min-width: 1140px) {
+  @media screen and (min-width: 1140px) {
     .flex {
       display: flex;
       justify-content: space-between;

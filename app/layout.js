@@ -11,6 +11,10 @@ export const metadata = {
   title: 'Web Designer in Bowie, MD | Websites Starting at $500',
   description:
     'I am a web designer in Bowie, MD, and I design simple, secure, fast, and mobile websites for general contractors.',
+  metadataBase: new URL('https://bowiewebmedia.com'),
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function RootLayout({ children }) {

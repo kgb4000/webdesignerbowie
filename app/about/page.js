@@ -1,6 +1,15 @@
-'use client'
-
 import Button from '@/components/Button'
+
+export const metadata = {
+  title:
+    'About Us | We Build Website for General Contractors | Bowie Web Media',
+  description:
+    'This is our About us page. Read how we can help general contractors build a website, save time and use their website to make money.',
+  metadataBase: new URL('https://bowiewebmedia.com'),
+  alternates: {
+    canonical: '/about',
+  },
+}
 
 export default function About() {
   return (

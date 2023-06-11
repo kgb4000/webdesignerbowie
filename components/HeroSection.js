@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Button from '../components/Button'
+import Button from '@/components/Button'
 
 const HeroSection = ({
   backgroundImage,
@@ -53,7 +53,7 @@ const Hero = styled('div')`
 
   @media only screen and (min-device-width: 360px) {
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       font-weight: 900;
     }
 
@@ -66,7 +66,7 @@ const Hero = styled('div')`
 
   @media (min-width: 768px) {
     h1 {
-      font-size: 2.8rem;
+      font-size: 3.8rem;
     }
 
     p {
@@ -84,19 +84,37 @@ const Hero = styled('div')`
   }
 `
 
-const WhiteButton = styled(Button)`
-  background-color: #cf0a0a;
+const WhiteButton = styled.button`
+  cursor: pointer;
+  padding: 1.2rem 1.5rem;
   color: #fff;
-  font-size: 1rem;
-  padding: 1.4rem 1.8rem;
-  margin: 2rem 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  border: 1px solid #2ecc71;
+  background: #2ecc71;
+  border-radius: 10px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 1.4em;
   font-weight: 700;
+  box-shadow: 0px 8px 0px #27ae60;
+  margin: 2rem 0;
+  outline: none;
+  text-transform: uppercase;
 
-  :hover {
-    color: #000;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-color: rgba(255, 255, 255, 0.1);
-  }
+  &:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 5px ##27ae61;
+  transform: translateY(4px);
+
+  &:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px ##27ae61;
+  transform: translateY(4px);
 
   @media only screen and (max-device-width: 320px) and (orientation: landscape) {
     font-size: 0.5rem;

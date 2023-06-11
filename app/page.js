@@ -6,22 +6,125 @@ import HeroSection from '@/components/HeroSection'
 import { Businesses, Business } from '../components/BusinessesWeWorkWith'
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How long does it take to build a website?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The timeframe depends on the complexity of the project. On average, a custom website design project can take between 1 - 2 weeks.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Will my website be mobile-friendly?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Absolutely! We design all our websites to be responsive, which means they will adapt to any screen size and provide an optimal user experience on all devices.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What about website security?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We implement various measures to secure your website, including SSL certificates, secure coding practices, and regular updates and backups.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you provide website hosting?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'While we primarily focus on web design, we can certainly assist you in finding the right hosting solution for your website.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much input can I have in the website design?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Your input is vital. We'll work closely with you throughout the design process to ensure the website aligns with your vision and meets your business needs.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do I need local SEO?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, if your business operates in a specific geographical area, or if it has a physical location that customers can visit, then Local SEO is crucial. It can help your business stand out in local search results, drive more traffic from local customers, and ultimately increase sales.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you offer website maintenance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we offer a variety of website maintenance packages that include services such as regular updates, backups, and performance optimizations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Will my website be search engine friendly?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we incorporate SEO best practices into every website we design to help increase your visibility on search engines.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is your payment structure for web design projects?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We typically require an initial deposit before we begin, with the balance payable upon completion of the project. We also offer payment plans for larger projects.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you provide content for the website?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'While we primarily focus on design, we can help guide you in producing high-quality content, or we can recommend professional copywriters if needed.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I track website performance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "We integrate tools like Google Analytics and Google Search Console into your website, which provide valuable insights into your site's performance and visitor behavior.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What happens if I encounter problems with the website after it’s completed?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "We offer ongoing support packages and are always available to assist if you encounter any issues. Your website's success is our priority.",
+        },
+      },
+    ],
+  }
+
   return (
     <main>
       <HeroSection
-        heroText="Looking for a Web Designer in Bowie?"
-        subText="We Design and Build Website for General Contractors."
+        heroText="Looking for a Web Designer in Bowie to Build a Website for Your Business?"
+        subText="I Design and Build Simple Websites for General Contractors."
         backgroundImage="/images/maryland-seo-company.webp"
         backgroundHeight="80vh"
         backgroundPosition="center"
-        buttonText="Schedule your free consultaion today!"
+        buttonText="Call me today!"
         buttonLink="https://google.com"
       />
       <section>
         <div className="medium-container">
           <h2 className="title">Web Design Services in Bowie</h2>
           <p className="subtext">
-            We create simple websites for general contractors who are want to
+            I create simple websites for general contractors who are want to
             create an online presence.
           </p>
           <Services>
@@ -36,7 +139,7 @@ export default function Home() {
               <div>
                 <h3>Web Design</h3>
                 <p>
-                  We design and build simple websites that attract customers to
+                  I design and build simple websites that attract customers to
                   your business, and make you look professional. They also look
                   fantastic on desktops, tablets, and mobile devices.
                 </p>
@@ -53,7 +156,7 @@ export default function Home() {
               <div>
                 <h3>Web Development</h3>
                 <p>
-                  We design and build simple websites that search engines will
+                  I design and build simple websites that search engines will
                   discover, attract customers to your business, and look
                   fantastic on desktops, tablets, and mobile devices.
                 </p>
@@ -63,16 +166,16 @@ export default function Home() {
               <img
                 src="/images/local-seo.webp"
                 className="page-img"
-                alt="Local SEO"
+                alt="Local SEO."
                 title="Local SEO."
                 loading="lazy"
               />
               <div>
                 <h3>Local SEO</h3>
                 <p>
-                  With a better website and page optimization, we get more
-                  people to find your small business on Google and Bing. I get
-                  more people on your small business website to make more money.
+                  With local search engine optimization, I get more people to
+                  find your small business on Google and Bing. More website
+                  visitors means more conversions and more money.
                 </p>
               </div>
             </div>
@@ -92,11 +195,11 @@ export default function Home() {
             />
             <div>
               <h2>
-                We Design and Build Websites for Home Service Businesses in
-                Bowie
+                I Design and Build Simple Websites for General Contractors and
+                Home Service Businesses
               </h2>
               <p></p>
-              <p>We work with:</p>
+              <p>Some of the business I work with:</p>
               <Businesses>
                 <Business>
                   <img
@@ -211,7 +314,7 @@ export default function Home() {
       <section>
         <div className="container">
           <h2 className="title">
-            What You Get When You Work With Bowie Web Media
+            What You Get When You Work With Me and Bowie Web Media
           </h2>
           <p className="subtext">Here is what you get when you work with us.</p>
           <Deliverables>
@@ -225,7 +328,7 @@ export default function Home() {
               <div>
                 <h3>Professional Landing Page Design</h3>
                 <p>
-                  We'll work closely with you to understand your brand and your
+                  I'll work closely with you to understand your brand and your
                   goals, and then design a website that truly reflects your
                   business.
                 </p>
@@ -241,8 +344,8 @@ export default function Home() {
               <div>
                 <h3>Responsive Design</h3>
                 <p>
-                  We ensure your website will work seamlessly on every device
-                  and browser, offering an optimal viewing experience for your
+                  I ensure your website will work seamlessly on every device and
+                  browser, offering an optimal viewing experience for your
                   visitors no matter how they access your site.
                 </p>
               </div>
@@ -257,7 +360,7 @@ export default function Home() {
               <div>
                 <h3>SEO Optimization</h3>
                 <p>
-                  We understand the importance of visibility on search engines.
+                  I understand the importance of visibility on search engines.
                   Therefore, we ensure your site is SEO-friendly, improving the
                   likelihood of appearing in top search results.
                 </p>
@@ -273,7 +376,7 @@ export default function Home() {
               <div>
                 <h3>User-Friendly Interface</h3>
                 <p>
-                  We design websites with user experience in mind, ensuring it's
+                  I design websites with user experience in mind, ensuring it's
                   intuitive and easy to navigate.
                 </p>
               </div>
@@ -290,7 +393,7 @@ export default function Home() {
               <div>
                 <h3>Fast Loading Speed</h3>
                 <p>
-                  We pay attention to website performance to ensure your site
+                  I pay attention to website performance to ensure your site
                   loads quickly, improving user experience and positively
                   influencing your SEO.
                 </p>
@@ -306,7 +409,7 @@ export default function Home() {
               <div>
                 <h3>Website Analytics</h3>
                 <p>
-                  We integrate tools like Google Analytics into your website so
+                  I integrate tools like Google Analytics into your website so
                   you can track visitor behavior and gain valuable insights to
                   inform your business decisions.
                 </p>
@@ -322,7 +425,7 @@ export default function Home() {
               <div>
                 <h3>Website Maintenance and Support</h3>
                 <p>
-                  After your website goes live, we continue to offer support and
+                  After your website goes live, I continue to offer support and
                   maintenance services to ensure its continuous optimal
                   performance.
                 </p>
@@ -338,7 +441,7 @@ export default function Home() {
               <div>
                 <h3>A Secure Website</h3>
                 <p>
-                  We take the security of your site seriously and integrate
+                  I take the security of your site seriously and integrate
                   robust security measures to prevent breaches and keep your
                   customer data safe.
                 </p>
@@ -359,8 +462,8 @@ export default function Home() {
               loading="lazy"
             />
             <div>
-              <h2>Why Work With Us</h2>
-              <h3>1. We Move fast</h3>
+              <h2>Why Work With Me</h2>
+              <h3>1. I Move fast</h3>
               <p>
                 Success loves speed and we do to. We can start your website and
                 have it done in less than 2 weeks.
@@ -374,12 +477,12 @@ export default function Home() {
               </p>
               <h3>4. No Long-Term Contracts</h3>
               <p>
-                We design and build your website, and it's yours forever. We
-                even give you the code so you own everything.
+                I design and build your website, and it's yours forever. We even
+                give you the code so you own everything.
               </p>
               <h3>5. We are a Local Web Design Company</h3>
               <p>
-                We live here. We want to see businesses in Bowie and Prince
+                I live here. We want to see businesses in Bowie and Prince
                 George's County thrive. We are vested in the success of any
                 Bowie small businesses we partner with.
               </p>
@@ -393,7 +496,16 @@ export default function Home() {
           <h2 className="title">
             Frequently Asked Questions about Our Web Design Services
           </h2>
-          <p className="subtext">Here are some FAQs that may help you out</p>
+          <p className="subtext">
+            Here are some FAQs that may help you decide what's the best thing to
+            do for your business.
+          </p>
+          {/* Add JSON-LD to your page */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+          {/* ... */}
           <FAQs>
             <div>
               <h3>How long does it take to build a website?</h3>
@@ -494,7 +606,26 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-      <Button buttonText="Call to get started today!" />
+      <div className="container">
+        <div className="grid">
+          <img
+            src="/images/happy-customer-calling-for-web-design-services.jpg"
+            className="call-to-action-grid-img"
+            alt="Man calling our Maryland SEO company."
+            width="1000"
+            height="667"
+            loading="lazy"
+          />
+          <div className="container">
+            <h2>
+              Stop Delaying, You're Missing Out on People Searching on Google
+              for Your Services
+            </h2>
+            <p>Call me and start building your website today.</p>
+            <Button buttonText="Call me and get started now!" />
+          </div>
+        </div>
+      </div>
     </main>
   )
 }
@@ -560,7 +691,7 @@ const Deliverable = styled.div`
 `
 
 const FAQs = styled.div`
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
